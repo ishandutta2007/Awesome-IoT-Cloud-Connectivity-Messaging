@@ -62,9 +62,9 @@ The table below lists top commercial SaaS and managed cloud connectivity solutio
 
 ## ⚡ Open-Source IoT Projects & MQTT Brokers
 
-The table below lists top open-source IoT connectivity frameworks, MQTT brokers, and client libraries, sorted by **GitHub Stars (Descending)**.
+The table below lists top open-source IoT connectivity frameworks, MQTT brokers, and client libraries, sorted by **GitHub_Stars (Descending)**.
 
-| 🛠️ Project Name | ⭐ Stars Badge | 📜 License | 🎯 Primary Focus & Key Features |
+| 🛠️ Project Name | ⭐ Stars_Badge | 📜 License | 🎯 Primary Focus & Key Features |
 | :--- | :--- | :--- | :--- |
 | **[Home Assistant Core](https://github.com/home-assistant/core)** | [![Stars](https://img.shields.github.io/github/stars/home-assistant/core?style=social)](https://github.com/home-assistant/core/stargazers) | Apache-2.0 | Open-source home automation platform with native MQTT integrations, local device control, and telemetry routing. |
 | **[Apache Kafka](https://github.com/apache/kafka)** | [![Stars](https://img.shields.github.io/github/stars/apache/kafka?style=social)](https://github.com/apache/kafka/stargazers) | Apache-2.0 | Distributed event streaming platform frequently paired with MQTT connectors for large-scale IoT data pipelines. |
