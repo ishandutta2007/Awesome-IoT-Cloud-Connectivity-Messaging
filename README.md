@@ -1,273 +1,134 @@
-# Awesome-IoT-Cloud-Connectivity-Messaging
-
-## Top IoT Cloud Connectivity & Messaging Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on MQTT Brokers, Device Connectivity & Self-Hosted IoT Messaging*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial IoT cloud connectivity platforms** and **open-source projects** that connect devices to the cloud, route telemetry, and enable bidirectional messaging at scale — from managed MQTT brokers to self-hosted IoT messaging backbones with fine-grained access control.
-
-
-
-**Examples** include AWS IoT Core, Azure IoT Hub, Google Cloud IoT, Particle, EMQX Cloud, HiveMQ Cloud, Losant, ThingsBoard, Ayla Networks, and Kaa IoT (the category leaders).
-
-
-
-**Open-source emphasis**: IoT cloud connectivity is one of the strongest open-source domains. **EMQX** leads as the most scalable MQTT broker with 100M+ connection support and 13,000+ GitHub stars . **Mosquitto** remains the reference lightweight MQTT broker with 8,000+ stars . **NanoMQ** brings ultra-lightweight MQTT to edge gateways with 1.7MB binary size . **VerneMQ** delivers distributed clustering for mission-critical deployments . **HiveMQ Community Edition** provides enterprise-grade MQTT semantics with an open-source core . **Magistrala** offers a Go-based, cloud-native IoT platform with fine-grained access control and mTLS provisioning . **ThingsBoard** leads as the most popular open-source IoT platform . **Kaa IoT** delivers enterprise IoT with a Kubernetes-ready, microservices architecture . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS IoT Core](https://aws.amazon.com/iot-core/)**  
-
-  **AWS's managed IoT connectivity service** — connect billions of IoT devices and route trillions of messages to AWS services . **Supports MQTT, HTTPS, MQTT over WSS, and LoRaWAN** . **Mutual authentication with X.509 certificates** and fine-grained access control via IAM policies . **Device Shadow for offline state management** and **Rules Engine for message routing** . **Best for AWS-native IoT connectivity** .
-
-
-
-- **[Azure IoT Hub](https://azure.microsoft.com/en-us/products/iot-hub/)**  
-
-  **Microsoft's managed IoT connectivity platform** — bidirectional communication between IoT devices and Azure . **Supports MQTT, AMQP, and HTTPS with per-device authentication** . **Device-to-cloud and cloud-to-device messaging with built-in routing** . **Best for Azure-native IoT connectivity** .
-
-
-
-- **[Google Cloud IoT](https://cloud.google.com/solutions/iot)**  
-
-  **Google's IoT connectivity** — Pub/Sub for device messaging with Cloud IoT Core (now retired) . **Recommended alternatives include Pub/Sub, Dataflow, and partner MQTT brokers** . **Best for GCP-native IoT architectures** .
-
-
-
-- **[Particle](https://www.particle.io/)**  
-
-  **IoT platform for connected devices** — cellular and Wi-Fi modules with cloud connectivity, OTA updates, and device management . **Best for prototyping and production IoT** .
-
-
-
-- **[EMQX Cloud](https://www.emqx.com/)**  
-
-  **Managed MQTT broker** — scalable to 100M+ connections . **Best for large-scale IoT messaging** . **Open-source EMQX also available for self-hosting** .
-
-
-
-- **[HiveMQ Cloud](https://www.hivemq.com/)**  
-
-  **Managed MQTT broker** — enterprise-grade IoT messaging . **Free tier available**; paid plans for production . **Best for IoT messaging** . **Open-source HiveMQ Community Edition also available** .
-
-
-
-- **[Losant](https://www.losant.com/)**  
-
-  **Enterprise IoT application platform** — visual workflow builder, edge compute, and device management . **Best for enterprise IoT** .
-
-
-
-- **[ThingsBoard](https://thingsboard.io/)**  
-
-  **Open-source IoT platform** — see Open-Source section for the community edition.
-
-
-
-- **[Ayla Networks](https://www.aylanetworks.com/)**  
-
-  **IoT platform for connected products** — device connectivity, data management, and application enablement . **Best for consumer and commercial IoT** .
-
-
-
-- **[Kaa IoT](https://www.kaaiot.com/)**  
-
-  **Enterprise IoT platform** — see Open-Source section for the community edition.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### MQTT Brokers
-
-
-
-- **[EMQX](https://github.com/emqx/emqx)**  
-
-  **The most scalable open-source MQTT broker**, Apache-2.0 licensed with **13,000+ GitHub stars** . **Connects 100M+ IoT devices and processes 1M+ messages per second** . **Built for high reliability and low latency** . **Supports MQTT 5.0, MQTT-SN, CoAP, LwM2M, and more** . **Cluster-ready with auto-discovery** . **Built-in rule engine for message processing** . **Best for large-scale IoT messaging** .
-
-
-
-- **[Eclipse Mosquitto](https://github.com/eclipse/mosquitto)**  
-
-  **The reference lightweight MQTT broker**, EPL-2.0 licensed with **8,000+ GitHub stars** . **Implements MQTT 5.0, 3.1.1, and 3.1** . **Low resource consumption** — runs on embedded devices and single-board computers . **Bridge support for connecting to remote brokers** . **Best for simple, resource-constrained IoT messaging** .
-
-
-
-- **[NanoMQ](https://github.com/nanomq/nanomq)**  
-
-  **Ultra-lightweight MQTT broker for edge**, MIT licensed . **Only 1.7MB in size** — designed for resource-constrained edge gateways . **Built on NNG with multi-threaded architecture** . **Supports MQTT 5.0/3.1.1, bridging, and rule engine** . **Best for edge MQTT deployments** .
-
-
-
-- **[VerneMQ](https://github.com/vernemq/vernemq)**  
-
-  **Distributed MQTT broker**, Apache-2.0 licensed . **Clusters to 100+ nodes with auto-discovery** . **Scales to millions of concurrent connections** . **Supports MQTT 5.0, WebSocket, and bridge mode** . **Best for clustered MQTT deployments** .
-
-
-
-- **[HiveMQ Community Edition](https://github.com/hivemq/hivemq-community-edition)**  
-
-  **Open-source MQTT broker with enterprise-grade semantics**, Apache-2.0 licensed . **Backpressure handling and high throughput** . **Supports MQTT 5.0 and 3.x** . **Best for IoT messaging with enterprise semantics** .
-
-
-
-- **[Moquette](https://github.com/moquette-io/moquette)**  
-
-  **Java MQTT broker**, Apache-2.0 licensed . **Lightweight and embeddable** . **Supports MQTT 3.1 and 3.1.1** . **Best for Java-based IoT messaging** .
-
-
-
-### IoT Connectivity Platforms
-
-
-
-- **[Magistrala](https://github.com/absmach/magistrala)**  
-
-  **Modern, Go-based, cloud-native IoT platform framework** (formerly Mainflux), Apache-2.0 licensed . **Supports MQTT, CoAP, HTTP, WebSocket, and LoRaWAN** . **Provision utility** creates channels and clients with certificate generation for mTLS use cases . **Fine-grained access control** — define object-scoped roles like "reader on channel1" . **Atom integration model** provides identity, authorization, and catalog with workspaces, entities, resources, and groups . **Scales from simple prototypes to complex deployments** without rigid patterns . **Best for cloud-native IoT connectivity with security** .
-
-
-
-- **[ThingsBoard](https://github.com/thingsboard/thingsboard)**  
-
-  **The most popular open-source IoT platform with 17,000+ GitHub stars**, Apache-2.0 licensed . **Supports MQTT, CoAP, HTTP, LwM2M, SNMP** . **Device management, data collection, processing, and visualization** . **Rule Engine for event-based workflows** . **Multi-tenancy with RBAC** . **Security**: Two-Factor Authentication, OAuth 2.0, Access Tokens, X.509 Certificates, SSL, DTLS . **Trade-offs**: Can be resource-heavy; Community edition lacks many Professional features . **Best for comprehensive IoT platform** .
-
-
-
-- **[Kaa IoT Platform](https://github.com/kaaproject/kaa)**  
-
-  **Enterprise IoT platform with open-source core**, Apache-2.0 licensed . **Kubernetes-ready, microservices architecture** — modular and extensible . **Device management, data collection, and OTA updates** . **SDKs for C, C++, Java, Python, and more** . **Best for enterprise IoT with Kubernetes** .
-
-
-
-- **[Mainflux (archived)](https://github.com/mainflux/mainflux)** — Original Mainflux project, now continued as Magistrala .
-
-
-
-- **[OpenHAB](https://github.com/openhab/openhab-core)** — Vendor-neutral home automation with MQTT binding .
-
-
-
-- **[Home Assistant](https://github.com/home-assistant/core)** — Open-source home automation with extensive IoT integrations .
-
-
-
-### Edge Connectivity
-
-
-
-- **[Mongoose OS](https://github.com/cesanta/mongoose-os)** — IoT firmware with MQTT, OTA, and cloud integrations .
-
-
-
-- **[EdgeX Foundry](https://github.com/edgexfoundry/edgex-go)** — Vendor-neutral IoT edge platform with MQTT and device connectivity .
-
-
-
-- **[EMQX Edge](https://github.com/emqx/emqx)** — Lightweight edge MQTT broker from EMQX .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **MQTT.js** — MQTT client library for JavaScript .
-
-- **Paho MQTT** — Eclipse Paho MQTT client libraries for C, C++, Python, Java, Go, and more .
-
-- **Paho Embedded C** — MQTT client for embedded systems .
-
-- **tinyMQTT** — Minimal MQTT broker in Python .
-
-- **Aedes** — Barebone MQTT server for Node.js .
-
-- **Mosca** — MQTT broker for Node.js (predecessor to Aedes) .
-
-- **RabbitMQ MQTT Adapter** — MQTT support for RabbitMQ .
-
-- **NATS** — Cloud-native messaging with MQTT support via NATS MQTT .
-
-- **Apache Kafka** — Event streaming with MQTT Connect via Kafka Connect .
-
-
-
-**Frameworks for building custom IoT cloud connectivity and messaging solutions**: Combine **EMQX** for large-scale IoT messaging with 100M+ connection support . Use **Mosquitto** or **NanoMQ** for resource-constrained edge deployments . Deploy **VerneMQ** for clustered MQTT with 100+ nodes . Choose **HiveMQ Community Edition** for enterprise-grade MQTT semantics . Integrate **Magistrala** for cloud-native IoT connectivity with fine-grained access control and mTLS . Use **ThingsBoard** or **Kaa IoT** for comprehensive IoT platforms with rule engines and dashboards . Note that true managed IoT connectivity with global infrastructure, automatic scaling, and vendor-supported SLAs (AWS IoT Core, Azure IoT Hub, EMQX Cloud) remains primarily commercial territory; open-source stacks provide strong MQTT brokers, device connectivity, and IoT platform foundations that require integration for complete IoT cloud messaging.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- IoT connectivity platforms handle device credentials and control physical devices. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **MQTT broker choice depends on scale** — Mosquitto for lightweight, EMQX for 100M+ connections, NanoMQ for edge, VerneMQ for clustering . Benchmark against your specific workload.
-
-- **Security is critical** — use TLS/SSL, client certificates, and authentication. Never expose MQTT brokers directly to the internet without proper security controls .
-
-- **Google Cloud IoT Core was retired** in 2023 — migrate to Pub/Sub with partner MQTT brokers for new deployments .
-
-- **License considerations**: EMQX uses Apache-2.0, Mosquitto uses EPL-2.0, NanoMQ uses MIT, VerneMQ uses Apache-2.0, HiveMQ Community uses Apache-2.0, and Magistrala uses Apache-2.0. Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong MQTT brokers, device connectivity, and IoT platform foundations, but **managed infrastructure, global scale, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+<p align="center">
+  <a href="#-awesome-iot-cloud-connectivity--messaging-ecosystem">
+    <img src="./assets/banner.svg" alt="Awesome IoT Cloud Connectivity &amp; Messaging Banner" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&amp;logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Dsscord-5865F2?style=fo--the-badge&amp;logo=discord&amp;logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-IoT-Cloud-Connectivity-Messaging"><img src="https://img.shields.io/badge/IoT--Messaging-Curated%20List-blue.svg" alt="Tracked Repos" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 🚀 Awesome IoT Cloud Connectivity & Messaging Ecosystem
 
+> 📡 A comprehensive, curated reference guide to **IoT Cloud Connectivity Platforms**, **Managed MQTT Brokers**, **Device Messaging Gateways**, and **Open-Source IoT Frameworks** for edge-to-cloud bidirectional messaging, telemetry streaming, device shadows, and remote device management.
 
-**Made for IoT engineers, embedded developers, and organizations seeking IoT cloud connectivity sovereignty.**  
+---
 
-Let's make IoT cloud connectivity and messaging more open, transparent, and scalable.
+## 📋 Table of Contents
+
+- [📊 Market Overview & Ecosystem Dynamics](#-market-overview--ecosystem-dynamics)
+- [☁️ SaaS & Managed Cloud Connectivity Platforms](#%EF%B8%8F-saas--managed-cloud-connectivity-platforms)
+- [⚡ Open-Source IoT Projects & MQTT Brokers](#-open-source-iot-projects--mqtt-brokers)
+- [🔍 Key Features & Comparative Summary](#-key-features--comparative-summary)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [⚠️ Disclaimer & Security Considerations](#%EF%B8%8F-disclaimer--security-considerations)
+- [📈 Star History](#-star-history)
+
+---
+
+## 📊 Market Overview & Ecosystem Dynamics
+
+**🌐 Estimated Market Size**: The global IoT cloud connectivity and messaging market is valued at **~$10.5 Billion in 2026** and projected to reach **~$34.8 Billion by 2032** at a Compound Annual Growth Rate (CAGR) of **~22.1%**.
+
+**🧩 Market Concentration & Fragmentation**: The sector is **moderately fragmented**. Infrastructure and cloud messaging layers are concentrated among hyperscale cloud providers (AWS, Microsoft Azure, Google Cloud). However, edge connectivity, specialized industrial IoT platforms, and lightweight/distributed MQTT messaging backbones are highly fragmented, leaving significant market share for dedicated SaaS providers (Particle, EMQX Cloud, HiveMQ, Losant) and open-source frameworks (ThingsBoard, Eclipse Mosquitto, Magistrala).
+
+---
+
+## ☁️ SaaS & Managed Cloud Connectivity Platforms
+
+The table below lists top commercial SaaS and managed cloud connectivity solutions, sorted by **Company Scale / Valuation (Descending)**.
+
+| 🏢 Platform / Vendor | 📝 Description & Key Strengths | 💰 Company Scale (Revenue / Valuation) | 💳 Starting Paid Price | 🎁 Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure IoT Hub](https://azure.microsoft.com/en-us/products/iot-hub/)** | Managed bidirectional cloud-to-device & device-to-cloud IoT messaging, per-device authentication, AMQP/MQTT/HTTPS support. | **~$3.1 Trillion Valuation** (~$245B Annual Revenue) | **$10.00 / month** per unit (Basic B1 Tier) | **8,000 messages/day free forever** (Free F1 Tier) + $200 Azure credit (30 days) |
+| **[AWS IoT Core](https://aws.amazon.com/iot-core/)** | Hyperscale managed IoT broker, X.509 mutual authentication, Device Shadows, SQL-like rules engine, LoRaWAN routing. | **~$2.0 Trillion Valuation** (~$100B+ AWS Annual Revenue) | **$1.00 / 1M messages** ($0.08 / 1M connectivity minutes) | **2.25M message-minutes & 500k messages free/mo** for 12 months |
+| **[Google Cloud IoT / Pub/Sub](https://cloud.google.com/pubsub)** | Enterprise event ingest and cloud messaging backbone for GCP IoT architectures with high throughput streaming. | **~$2.0 Trillion Valuation** (~$300B+ Alphabet Annual Revenue) | **$40.00 / TB** ($0.04 per GB) after free usage | **10 GB message data free/mo forever** + $300 GCP credit (90 days) |
+| **[Particle Cloud](https://www.particle.io/)** | End-to-end IoT platform bundling cellular/Wi-Fi hardware, cloud messaging, OTA firmware updates, and fleet rules. | **~$200 Million Valuation** ($80M+ total VC funding) | **$349.00 / month** (Growth Plan for up to 1,000 devices) | **Up to 100 devices & 100,000 data ops/mo free forever** (Free Plan) |
+| **[Ayla Networks](https://www.aylanetworks.com/)** | Enterprise IoT platform for consumer appliance and commercial device connectivity, automated provisioning, and telemetry analytics. | **~$150 Million Valuation** ($65M+ VC funding, ~$30M Rev) | **$500.00 / month** (Starter Enterprise Tier) | **30-day Free Trial** with developer sandbox access for up to 5 test devices |
+| **[EMQX Cloud](https://www.emqx.com/en/cloud)** | Fully managed serverless & dedicated MQTT cloud broker with multi-region clustering, data integration, and 100M+ device scale. | **~$100 Million Valuation** ($50M+ VC funding, ~$15M ARR) | **$0.15 / hour** (~$108/month Serverless) / $270/mo Dedicated | **1 Million free session minutes/month free forever** + 14-day Dedicated trial |
+| **[HiveMQ Cloud](https://www.hivemq.com/cloud/)** | Enterprise-grade managed MQTT messaging service built for automotive, smart manufacturing, and high-reliability IoT applications. | **~$80 Million Valuation** ($43M+ VC funding, ~$20M ARR) | **$1.50 / GB transferred** (Pay-As-You-Go Plan) | **Up to 100 connected devices & 10 GB data traffic/mo free forever** |
+| **[Losant](https://www.losant.com/)** | Low-code enterprise IoT application platform featuring visual workflow engine, edge compute, and custom device dashboards. | **~$60 Million Valuation** ($20M+ VC funding, ~$15M ARR) | **$150.00 / month** (Developer / Starter Plan) | **Free Developer Sandbox** for up to 10 devices & 50,000 payload executions/mo |
+| **[ThingsBoard Cloud](https://thingsboard.io/pricing/)** | Fully hosted SaaS version of ThingsBoard offering IoT device management, customizable dashboards, and real-time rule engine. | **~$30 Million Valuation** (~$10M ARR) | **$10.00 / month** (Maker Plan for up to 30 devices) | **30-day Free Trial** up to 30 devices (Self-hosted Community Edition is 100% free) |
+| **[Kaa IoT Cloud](https://www.kaaiot.com/)** | Flexible enterprise IoT cloud platform offering device management, telemetry visualization, OTA updates, and microservices integration. | **~$15 Million Valuation** (~$5M ARR) | **$99.00 / month** (Startup Plan for up to 100 devices) | **Up to 5 devices free forever** (Starter Plan) + 14-day full feature trial |
+
+---
+
+## ⚡ Open-Source IoT Projects & MQTT Brokers
+
+The table below lists top open-source IoT connectivity frameworks, MQTT brokers, and client libraries, sorted by **GitHub Stars (Descending)**.
+
+| 🛠️ Project Name | ⭐ Stars Badge | 📜 License | 🎯 Primary Focus & Key Features |
+| :--- | :--- | :--- | :--- |
+| **[Home Assistant Core](https://github.com/home-assistant/core)** | [![Stars](https://img.shields.github.io/github/stars/home-assistant/core?style=social)](https://github.com/home-assistant/core/stargazers) | Apache-2.0 | Open-source home automation platform with native MQTT integrations, local device control, and telemetry routing. |
+| **[Apache Kafka](https://github.com/apache/kafka)** | [![Stars](https://img.shields.github.io/github/stars/apache/kafka?style=social)](https://github.com/apache/kafka/stargazers) | Apache-2.0 | Distributed event streaming platform frequently paired with MQTT connectors for large-scale IoT data pipelines. |
+| **[ThingsBoard](https://github.com/thingsboard/thingsboard)** | [![Stars](https://img.shields.github.io/github/stars/thingsboard/thingsboard?style=social)](https://github.com/thingsboard/thingsboard/stargazers) | Apache-2.0 | Most popular open-source IoT platform offering device management, MQTT/CoAP/HTTP transport, rule engine, & dashboards. |
+| **[NATS Server](https://github.com/nats-io/nats-server)** | [![Stars](https://img.shields.github.io/github/stars/nats-io/nats-server?style=social)](https://github.com/nats-io/nats-server/stargazers) | Apache-2.0 | Cloud-native, high-performance pub/sub messaging system with built-in MQTT standard protocol support. |
+| **[EMQX](https://github.com/emqx/emqx)** | [![Stars](https://img.shields.github.io/github/stars/emqx/emqx?style=social)](https://github.com/emqx/emqx/stargazers) | BSL / Apache-2.0 | Scalable open-source distributed MQTT 5.0 broker supporting 100M+ concurrent connections with SQL rule engine. |
+| **[RabbitMQ](https://github.com/rabbitmq/rabbitmq-server)** | [![Stars](https://img.shields.github.io/github/stars/rabbitmq/rabbitmq-server?style=social)](https://github.com/rabbitmq/rabbitmq-server/stargazers) | MPL-2.0 | Multi-protocol message broker with official MQTT plugin enabling MQTT to AMQP bridging & enterprise queuing. |
+| **[Eclipse Mosquitto](https://github.com/eclipse/mosquitto)** | [![Stars](https://img.shields.github.io/github/stars/eclipse/mosquitto?style=social)](https://github.com/eclipse/mosquitto/stargazers) | EPL-2.0 / EDL-1.0 | Reference lightweight C-based MQTT broker for embedded gateways, single-board computers, and edge deployments. |
+| **[MQTT.js](https://github.com/mqttjs/MQTT.js)** | [![Stars](https://img.shields.github.io/github/stars/mqttjs/MQTT.js?style=social)](https://github.com/mqttjs/MQTT.js/stargazers) | MIT | Standard client library for MQTT protocol in Node.js and modern web browsers. |
+| **[VerneMQ](https://github.com/vernemq/vernemq)** | [![Stars](https://img.shields.github.io/github/stars/vernemq/vernemq?style=social)](https://github.com/vernemq/vernemq/stargazers) | Apache-2.0 | Distributed Erlang-based MQTT broker designed for high-availability cluster setups and low-latency messaging. |
+| **[Mongoose OS](https://github.com/cesanta/mongoose-os)** | [![Stars](https://img.shields.github.io/github/stars/cesanta/mongoose-os?style=social)](https://github.com/cesanta/mongoose-os/stargazers) | Apache-2.0 / Commercial | Embedded IoT firmware development framework with built-in MQTT, TLS, OTA updates, and cloud connector support. |
+| **[Magistrala](https://github.com/absmach/magistrala)** | [![Stars](https://img.shields.github.io/github/stars/absmach/magistrala?style=social)](https://github.com/absmach/magistrala/stargazers) | Apache-2.0 | Cloud-native Go-based IoT platform (formerly Mainflux) providing mTLS provisioning, fine-grained access, and multi-protocol channels. |
+| **[NanoMQ](https://github.com/nanomq/nanomq)** | [![Stars](https://img.shields.github.io/github/stars/nanomq/nanomq?style=social)](https://github.com/nanomq/nanomq/stargazers) | MIT | Ultra-lightweight edge MQTT broker (1.7MB footprint) built on NNG for embedded Linux and Software-Defined Vehicles. |
+| **[Moquette](https://github.com/moquette-io/moquette)** | [![Stars](https://img.shields.github.io/github/stars/moquette-io/moquette?style=social)](https://github.com/moquette-io/moquette/stargazers) | Apache-2.0 | Embeddable Java-based lightweight MQTT broker suitable for Android and Java enterprise applications. |
+| **[Eclipse Paho Python](https://github.com/eclipse/paho.mqtt.python)** | [![Stars](https://img.shields.github.io/github/stars/eclipse/paho.mqtt.python?style=social)](https://github.com/eclipse/paho.mqtt.python/stargazers) | EPL-2.0 / EDL-1.0 | Official Eclipse Paho Python client library for implementing MQTT 5.0 and 3.1.1 network clients. |
+| **[Eclipse Paho C](https://github.com/eclipse/paho.mqtt.c)** | [![Stars](https://img.shields.github.io/github/stars/eclipse/paho.mqtt.c?style=social)](https://github.com/eclipse/paho.mqtt.c/stargazers) | EPL-2.0 / EDL-1.0 | Standard Eclipse Paho C client library designed for embedded Linux and microcontrollers. |
+| **[Aedes](https://github.com/mcollina/aedes)** | [![Stars](https://img.shields.github.io/github/stars/mcollina/aedes?style=social)](https://github.com/mcollina/aedes/stargazers) | MIT | Fast barebone Node.js MQTT broker component designed to run inside any Node.js stream server. |
+| **[EdgeX Foundry](https://github.com/edgexfoundry/edgex-go)** | [![Stars](https://img.shields.github.io/github/stars/edgexfoundry/edgex-go?style=social)](https://github.com/edgexfoundry/edgex-go/stargazers) | Apache-2.0 | Modular open-source IoT edge platform framework hosted by LF Edge for industrial edge computing. |
+| **[Kaa IoT Platform](https://github.com/kaaproject/kaa)** | [![Stars](https://img.shields.github.io/github/stars/kaaproject/kaa?style=social)](https://github.com/kaaproject/kaa/stargazers) | Apache-2.0 | Microservices-based enterprise IoT platform core for Kubernetes deployments, device management, and OTA. |
+| **[Eclipse Paho C++](https://github.com/eclipse/paho.mqtt.cpp)** | [![Stars](https://img.shields.github.io/github/stars/eclipse/paho.mqtt.cpp?style=social)](https://github.com/eclipse/paho.mqtt.cpp/stargazers) | EPL-2.0 / EDL-1.0 | Modern C++ wrapper client library for Eclipse Paho C MQTT implementation. |
+| **[HiveMQ Community Edition](https://github.com/hivemq/hivemq-community-edition)** | [![Stars](https://img.shields.github.io/github/stars/hivemq/hivemq-community-edition?style=social)](https://github.com/hivemq/hivemq-community-edition/stargazers) | Apache-2.0 | Java-based open-source MQTT broker supporting MQTT 3.x and MQTT 5.0 protocol specifications. |
+| **[openHAB Core](https://github.com/openhab/openhab-core)** | [![Stars](https://img.shields.github.io/github/stars/openhab/openhab-core?style=social)](https://github.com/openhab/openhab-core/stargazers) | EPL-2.0 | Core Java framework powering openHAB home automation system with extensive MQTT bindings. |
+| **[Mainflux (Archived)](https://github.com/mainflux/mainflux)** | [![Stars](https://img.shields.github.io/github/stars/mainflux/mainflux?style=social)](https://github.com/mainflux/mainflux/stargazers) | Apache-2.0 | Legacy Go-based industrial IoT messaging platform, now succeeded by the Magistrala project. |
+
+---
+
+## 🔍 Key Features & Comparative Summary
+
+When choosing an IoT cloud connectivity platform or MQTT broker, evaluate:
+
+1. 📡 **Protocol Support**: MQTT 5.0, MQTT-SN, CoAP, HTTP/2, WebSockets, AMQP, LoRaWAN.
+2. 🔐 **Security & Auth**: X.509 mutual TLS (mTLS) certificate authentication, OAuth 2.0, fine-grained access control (RBAC), and per-device tokens.
+3. 🏗️ **Deployment Model**:
+   - **Hyperscaler SaaS** (AWS IoT Core, Azure IoT Hub): Best for serverless scalability and native cloud integration.
+   - **Specialized Managed MQTT** (EMQX Cloud, HiveMQ Cloud): Best for pure MQTT protocol compliance, high throughput, and multi-cloud flexibility.
+   - **Self-Hosted Open Source** (Mosquitto, EMQX, ThingsBoard, Magistrala): Best for data sovereignty, custom edge/on-prem deployments, and avoiding vendor lock-in.
+
+---
+
+## 🤝 How to Contribute
+
+1. 🍴 Fork this repository.
+2. ✏️ Update `README.md` following the tabular schema.
+3. 🚀 Submit a Pull Request detailing the product/project, licensing, and pricing/star updates.
+
+---
+
+## 💖 Support & Community
+
+If you found this curated IoT Cloud Connectivity & Messaging list useful:
+- ⭐ **Star this repository** on GitHub to show support!
+- 🍴 **Fork it** to customize your own IoT technology stack matrix.
+- 📢 **Share it** with fellow IoT engineers, embedded developers, and cloud architects.
+- ☕ **Buy me a coffee**: Support ongoing maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer & Security Considerations
+
+- 📌 This list is community-curated for informational purposes.
+- 🛡️ IoT device connectivity handles sensitive physical credentials and telemetry. Ensure strong TLS encryption and access security when deploying IoT messaging brokers.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-IoT-Cloud-Connectivity-Messaging&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-IoT-Cloud-Connectivity-Messaging&type=date&legend=top-left)
